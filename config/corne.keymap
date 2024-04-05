@@ -99,7 +99,7 @@
 &none  &trans     &trans     &trans     &trans     &trans                &trans     &trans     &trans         &trans     &trans  &none
 &none  &kp LCTRL  &kp LALT   &kp LGUI   &kp LSHFT  &kp LG(LS(N5))        &kp LEFT   &kp DOWN   &kp UP         &kp RIGHT  &none   &none
 &none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LC(LS(N4)))    &trans     &trans     &trans         &trans     &none   &none
-                             &none      &none      &none                 &kp ENTER  &mkp LCLK  &kp BACKSPACE
+                             &none      &none      &none                 &kp ENTER  &none  &kp BACKSPACE
             >;
         };
     };
