@@ -33,7 +33,7 @@
 &none  &kp Q        &kp W           &kp E           &kp R             &kp T        &kp Y      &kp U             &kp I           &kp O           &lt 5 P                        &trans
 &none  &mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G        &kp H      &mt LEFT_SHIFT J  &mt LEFT_GUI K  &mt LEFT_ALT L  &mt LEFT_CONTROL SINGLE_QUOTE  &none
 &none  &kp Z        &kp X           &kp C           &kp V             &kp B        &kp N      &kp M             &kp COMMA       &kp DOT         &kp FSLH                       &none
-                                    &lt 3 ESC       &sk LEFT_SHIFT    &lt 3 TAB    &lt 2 RET  &lt 1 SPACE       &lt 4 BSPC
+                                    &lt 3 ESC       &sk LEFT_SHIFT    &lt 6 TAB    &lt 2 RET  &lt 1 SPACE       &lt 4 BSPC
             >;
         };
 
@@ -91,6 +91,15 @@
 &none  &none  &kp LG(F1)   &none       &none   &none         &none   &none   &none   &none  &none  &none
 &none  &none  &none        &kp LG(F2)  &none   &kp LG(F3)    &none   &none   &none   &none  &none  &none
                            &trans      &trans  &trans        &trans  &trans  &trans
+            >;
+        };
+
+        NAV {
+            bindings = <
+&none  &trans     &trans     &trans     &trans     &trans                &trans     &trans     &trans         &trans     &trans  &none
+&none  &kp LCTRL  &kp LALT   &kp LGUI   &kp LSHFT  &kp LG(LS(N5))        &kp LEFT   &kp DOWN   &kp UP         &kp RIGHT  &none   &none
+&none  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LC(LS(N4)))    &trans     &trans     &trans         &trans     &none   &none
+                             &none      &none      &none                 &kp ENTER  &mkp LCLK  &kp BACKSPACE
             >;
         };
     };
