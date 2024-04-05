@@ -8,7 +8,11 @@
     };
   };
 
-  outputs = { self, nixpkgs, zmk-nix }: let
+  outputs = {
+    self,
+    nixpkgs,
+    zmk-nix,
+  }: let
     forAllSystems = nixpkgs.lib.genAttrs (nixpkgs.lib.attrNames zmk-nix.packages);
   in {
     packages = forAllSystems (system: rec {
@@ -17,12 +21,12 @@
       firmware = zmk-nix.legacyPackages.${system}.buildSplitKeyboard {
         name = "firmware";
 
-        src = nixpkgs.lib.sourceFilesBySuffices self [ ".conf" ".keymap" ".yml" ];
+        src = nixpkgs.lib.sourceFilesBySuffices self [".conf" ".keymap" ".yml"];
 
         board = "nice_nano_v2";
-        shield = "lily58_%PART%";
+        shield = "corne_%PART% nice_view_adapter nice_view";
 
-        zephyrDepsHash = "sha256-n7xX/d8RLqDyPOX4AEo5hl/3tQtY6mZ6s8emYYtOYOg=";
+        zephyrDepsHash = "sha256-QYFJtCAXioVKka6LhimF2zmHK9UhHpvsZOpIdjjBKp0=";
 
         meta = {
           description = "ZMK firmware";
@@ -31,7 +35,7 @@
         };
       };
 
-      flash = zmk-nix.packages.${system}.flash.override { inherit firmware; };
+      flash = zmk-nix.packages.${system}.flash.override {inherit firmware;};
       update = zmk-nix.packages.${system}.update;
     });
 
