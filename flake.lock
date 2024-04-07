@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1712192574,
-        "narHash": "sha256-LbbVOliJKTF4Zl2b9salumvdMXuQBr2kuKP5+ZwbYq4=",
+        "lastModified": 1712449641,
+        "narHash": "sha256-U9DDWMexN6o5Td2DznEgguh8TRIUnIl9levmit43GcI=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "f480f9d09e4b4cf87ee6151eba068197125714de",
+        "rev": "600b15aea1b36eeb43833a50b0e96579147099ff",
         "type": "github"
       },
       "original": {
@@ -29,15 +29,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1711844966,
-        "narHash": "sha256-cwmpX8sKUjMKIA+MmkWPwYJGFRHZbpuW0HaM41GhxbQ=",
-        "owner": "lilyinstarlight",
+        "lastModified": 1712416482,
+        "narHash": "sha256-/+TnWPSDAvUYrVn8gJyBvn22c51b/1fJiGa6OMAkDvk=",
+        "owner": "delabere",
         "repo": "zmk-nix",
-        "rev": "21fde915652662ac883d22881537f40a1ce82014",
+        "rev": "115ef77223a268926c59b678135df4f28d9930f7",
         "type": "github"
       },
       "original": {
-        "owner": "lilyinstarlight",
+        "owner": "delabere",
+        "ref": "fix-building-on-darwin",
         "repo": "zmk-nix",
         "type": "github"
       }
