@@ -28,10 +28,13 @@
     bindings = <&mo>, <&kp>;
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS BACKSPACE>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
-
         caps_word {
             bindings = <&caps_word>;
             key-positions = <16 19>;
