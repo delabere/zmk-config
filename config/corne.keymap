@@ -11,7 +11,6 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors/mouse_keys.dtsi>
 
-
 #define U_TAPPING_TERM 200
 
 &mt {
@@ -34,6 +33,11 @@
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE>;
+};
+
+&mmv {
+  time-to-max-speed-ms = <1500>;
+  delay-ms = <0>;
 };
 
 / {
