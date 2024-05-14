@@ -58,7 +58,7 @@
             bindings = <
 &none  &kp Q        &kp W           &kp E           &kp R             &kp T        &kp Y      &kp U             &kp I           &kp O           &lt 5 P                        &trans
 &none  &mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G        &kp H      &mt LEFT_SHIFT J  &mt LEFT_GUI K  &mt LEFT_ALT L  &mt LEFT_CONTROL SINGLE_QUOTE  &none
-&none  &kp Z        &kp X           &kp C           &kp V             &kp B        &kp N      &kp M             &kp COMMA       &kp DOT         &kp FSLH                       &none
+&none  &mt LSHFT Z  &kp X           &kp C           &kp V             &kp B        &kp N      &kp M             &kp COMMA       &kp DOT         &mt RSHFT SLASH                &none
                                     &lt 3 ESC       &sk LEFT_SHIFT    &lt 6 TAB    &lt 2 RET  &lt 1 SPACE       &lt 4 BSPC
             >;
         };
@@ -118,4 +118,3 @@
         };
     };
 };
-
