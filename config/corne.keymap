@@ -74,10 +74,10 @@
 
         SYM {
             bindings = <
-&none  &kp EXCL   &kp AT             &kp HASH           &kp DLLR          &kp PRCNT        &kp EQUAL     &kp LPAR  &kp RPAR  &kp COLON          &kp PLUS        &none
-&none  &kp GRAVE  &kp LESS_THAN      &kp LA(LS(POUND))  &kp GREATER_THAN  &kp CARET        &kp ASTERISK  &kp LBRC  &kp RBRC  &kp SEMICOLON      &kp MINUS       &none
-&none  &kp TILDE  &kp LA(LS(POUND))  &kp BACKSLASH      &kp PIPE          &kp AMPERSAND    &kp GRAVE     &kp LBKT  &kp RBKT  &kp DOUBLE_QUOTES  &kp UNDERSCORE  &none
-                                     &none              &none             &none            &none         &none     &none
+&none  &kp EXCL   &kp AT             &kp HASH              &kp DLLR          &kp PRCNT        &kp EQUAL     &kp LPAR  &kp RPAR  &kp COLON          &kp PLUS        &none
+&none  &kp GRAVE  &kp LESS_THAN      &kp LA(LS(NUMBER_3))  &kp GREATER_THAN  &kp CARET        &kp ASTERISK  &kp LBRC  &kp RBRC  &kp SEMICOLON      &kp MINUS       &none
+&none  &kp TILDE  &kp LA(LS(POUND))  &kp BACKSLASH         &kp PIPE          &kp AMPERSAND    &kp GRAVE     &kp LBKT  &kp RBKT  &kp DOUBLE_QUOTES  &kp UNDERSCORE  &none
+                                     &none                 &none             &none            &none         &none     &none
             >;
         };
 
