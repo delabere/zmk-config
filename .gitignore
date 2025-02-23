@@ -4,3 +4,5 @@
 /zmk
 /build
 result
+backup
+.DS_Store
