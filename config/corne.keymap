@@ -11,6 +11,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define U_TAPPING_TERM 200
+#define VOICE_HOTKEY LC(LA(LG(LS(F13))))
 
 &mt {
     compatible = "zmk,behavior-hold-tap";
@@ -107,7 +108,7 @@
 
         BUTTON {
             bindings = <
-&none  &none  &kp LG(F10)  &none       &none   &kp LG(F6)    &none   &none   &none   &none  &none  &none
+&none  &kp VOICE_HOTKEY  &kp LG(F10)  &none       &none   &kp LG(F6)    &none   &none   &none   &none  &none  &none
 &none  &none  &kp LG(F1)   &none       &none   &none         &none   &none   &none   &none  &none  &none
 &none  &none  &none        &kp LG(F2)  &none   &kp LG(F3)    &none   &none   &none   &none  &none  &none
                            &trans      &trans  &trans        &trans  &trans  &trans

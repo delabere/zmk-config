@@ -19,12 +19,12 @@
         firmware = zmk-nix.legacyPackages.${system}.buildSplitKeyboard {
           name = "firmware";
 
-          src = nixpkgs.lib.sourceFilesBySuffices self [ ".conf" ".keymap" ".yml" ];
+          src = nixpkgs.lib.sourceFilesBySuffices self [ ".conf" ".keymap" ".overlay" ".yml" ];
 
-          board = "nice_nano_v2";
-          shield = "corne_%PART% nice_view_adapter nice_view";
+          board = "nice_nano";
+          shield = "corne_%PART%";
 
-          zephyrDepsHash = "sha256-F3l9ar/6EMmLdFsFG5au8sJiT/j1i81TdA3OWZJMc6M=";
+          zephyrDepsHash = "sha256-VIVDGs0nwgWSu4KxYaUPK6SC92dlQR6viePMyQJQQfg=";
 
           meta = {
             description = "ZMK firmware";
